@@ -27,6 +27,13 @@ var User = new Schema({
     email: String,
     password: String,
   },
+// THE TWITTER object is used when a user signs up or logs in via Twitter.
+  twitter : {
+    id: String,
+    token: String,
+    username: String,
+    displayName: String
+  },
   topics: [Topic]
 });
 

@@ -17,14 +17,16 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul>
+      <!-- <ul> -->
+        <ul class="nav navbar-nav navbar-right">
       {{#if currentUser}}
         <li><a href="/logout">Logout {{currentUser.local.email}}</a></li<a>
       {{else}}
         <li><a href="/login">Login</a></li>
-        <li><a href="/signup">Signup</a></li>
+        <li><a href="/signup">Sign up</a></li>
       {{/if}}
     </ul>
+    <!-- </ul> -->
 
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
